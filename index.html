@@ -1,29 +1,240 @@
+<!--I borrowed a CSS template from (https://startbootstrap.com/themes/). The author is not stated, but the license indicates that it was made by some in MIT
+I heavily edited most of the HTML and small portions of the Javascript and CSS file, though most of the general format is credited to the original owner with the license-->
+
+<!--The media query I included was one that was targeted to smaller or mobile devices. When one visits this page on these small devices, the background color will change!
+I thought that this was a neat little feature that could add to a page's responsiveness based on the device that the user is using.-->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Crean Website</title>
-</head>
-<body>
-    <header>
-        <h1>Hello boy! This is my website template.</h1>
-        <h2>I don't have any bootstrap or actual content to fill my page, so I just have a placeholder paragraph filled with lorem ipsum</h2>
-    </header>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Activities to Pass the Time</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        
+        
+        
+        <!--The external link to the CSS style page I edited and worked on. It includes parts of the template, but I have included extra changes to customize the page-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a><button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Activities</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Credits</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      
+        <header class="masthead bg-secondary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <h2 style="margin-bottom: 30px;">Today's Date: <span id="datetime"></span></h2>
 
-    <div id="main">
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt praesent semper feugiat nibh sed pulvinar. Id aliquet lectus proin nibh nisl condimentum id. Leo vel fringilla est ullamcorper eget nulla facilisi etiam. Felis donec et odio pellentesque diam. Mauris sit amet massa vitae tortor condimentum. Arcu cursus euismod quis viverra nibh cras. Id faucibus nisl tincidunt eget nullam non. Morbi tristique senectus et netus et malesuada fames. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Tortor at risus viverra adipiscing at. Ut etiam sit amet nisl purus in. Cursus risus at ultrices mi tempus. Habitant morbi tristique senectus et. Iaculis at erat pellentesque adipiscing commodo. Orci eu lobortis elementum nibh tellus molestie nunc. Tellus molestie nunc non blandit massa enim nec dui nunc. Condimentum lacinia quis vel eros donec ac odio tempor orci.
+               <img src="https://image.freepik.com/free-vector/cute-happy-kids-having-fun-cartoons_18591-60558.jpg" style="margin: 0px 0px 50px 0px; outline: solid black 7px;" /><!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Activities to Pass the Time</h1>
+         
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <p class="masthead-subheading font-weight-light mb-0">by Ryan Kim</p>
+            </div>
+        </header>
 
-        Sit amet consectetur adipiscing elit ut aliquam. Odio ut sem nulla pharetra. Fames ac turpis egestas sed. Massa eget egestas purus viverra accumsan in nisl. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Neque viverra justo nec ultrices dui sapien eget mi. Dictum at tempor commodo ullamcorper a. Euismod elementum nisi quis eleifend quam adipiscing. Elementum sagittis vitae et leo duis ut diam. Vestibulum rhoncus est pellentesque elit ullamcorper. Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Etiam sit amet nisl purus in mollis nunc. Volutpat consequat mauris nunc congue. Iaculis eu non diam phasellus vestibulum lorem. Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi. Egestas pretium aenean pharetra magna. Nec tincidunt praesent semper feugiat. Quisque id diam vel quam.
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 ml-auto"><p class="lead">Now that everyone is stuck at home due to quarantine, I suddenly found myself with a lot more time on my hands. The issue was that I did not know what to do with this extra time.</p></div>
+                    <div class="col-lg-4 mr-auto"><p class="lead">I have thought of a few activities that I would enjoy during these times of quarantine. I hope you can enjoy these as well!</p></div>
+                </div>
+            </div>
+        </section>
 
-        Gravida cum sociis natoque penatibus et magnis. Cras pulvinar mattis nunc sed blandit libero. Lobortis feugiat vivamus at augue eget. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Eget velit aliquet sagittis id. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Tortor condimentum lacinia quis vel eros donec ac. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Quis lectus nulla at volutpat diam ut venenatis tellus. Accumsan lacus vel facilisis volutpat est velit egestas. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.
+        <!-- Activities Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Activities</h2>
+               
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                
+                <div class="tableholder">
+                    <table>
+                        <tr>
+                          <th>Want to go camping with friends? Click below!</th>
+                          <th>Want to hold a circus or talent show? Click below!</th>
+                          <th>Want to play video games on a console or computer? Click below!</th>
+                        </tr>
+                    </table>
+                </div>
+                
 
-        Amet risus nullam eget felis eget nunc lobortis. Odio morbi quis commodo odio. Cursus turpis massa tincidunt dui ut ornare. Id aliquet risus feugiat in ante metus dictum. Proin libero nunc consequat interdum varius sit amet. Enim nulla aliquet porttitor lacus luctus. Amet nulla facilisi morbi tempus iaculis urna. Tincidunt dui ut ornare lectus sit amet est placerat. Luctus accumsan tortor posuere ac. Sem integer vitae justo eget magna fermentum iaculis eu non. Eu nisl nunc mi ipsum faucibus vitae. Nam at lectus urna duis convallis convallis tellus id. Lectus magna fringilla urna porttitor rhoncus. Mauris in aliquam sem fringilla. Eget egestas purus viverra accumsan in nisl nisi. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Non arcu risus quis varius.
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="" />
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="" />
+                        </div>
+                    </div>
 
-        Enim blandit volutpat maecenas volutpat blandit. Urna neque viverra justo nec ultrices dui sapien eget. Lectus proin nibh nisl condimentum id venenatis a condimentum vitae. Ornare arcu dui vivamus arcu felis bibendum ut tristique. Velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus. Consectetur purus ut faucibus pulvinar elementum integer enim. Proin fermentum leo vel orci. Volutpat odio facilisis mauris sit amet massa vitae tortor. Massa eget egestas purus viverra accumsan in nisl. Nunc lobortis mattis aliquam faucibus purus in massa tempor nec. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. Sodales neque sodales ut etiam sit amet.
-        </p>
-    </div>
-</body>
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt="" />
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+     
+        <section class="page-section" id="contact" style="background-color: #1abc9c;">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-white">Credits and Ending Remarks</h2>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>      
+                <div class="row">
+                    <div class="col-lg-4 ml-auto"><p class="lead">This page is a relatively heavily edited version of a template named Freelancer provided by Bootstrap. This template along with many other great ones can be found <a href="https://startbootstrap.com/themes/" class="lead" style="color: black; text-decoration: underline;">on their website! (external link)</a></p></div>
+                    <div class="col-lg-4 mr-auto"><p class="lead">Though there are many more activities I can think of such as going to the beach, they all break the rule of social distancing, so it would be pointless to consider doing them now. However, I hope that these few corona-pro activities are enough for you to spend your time away on!</p></div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Camping</h2>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="" /><!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Go along with a few of your friends on a quick and isolated camping trip! There would be no risk as long as you plan ahead and make sure that the camping spot is isolated from other people.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Host Your Own Show</h2>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="" /><!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">You also need a few friends for this one, but you could enjoy your time with a fun show with possibly some circus acts, talents, or games for everyone to play together! It doesn't have to be in a circus tent though that would add even more to the fun.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">Play Videogames</h2>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="" /><!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">This is my personal favorite, and it is also something that you can enjoy alone! There are many free games online that you can download or play on a web browser, and playing these games quickly eats away at the hours. Some fun games that I enjoy myself are League of Legends, Minecraft, and Warzone.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <script src="js/scripts.js"></script>
+        <script>
+            var currentDate = new Date();
+            document.getElementById("datetime").innerHTML = currentDate.toLocaleDateString();
+        </script>
+
+    </body>
 </html>
